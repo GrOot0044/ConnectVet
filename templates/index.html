@@ -1,7 +1,21 @@
-{% extends 'base.html' %}
-
+{% extends "base.html" %}
 {% block content %}
-    <h2>Bienvenue sur ConnectVet</h2>
+    <h1>Bienvenue sur ConnectVet</h1>
     <p>ConnectVet est une solution innovante pour surveiller la santé de votre animal en temps réel.</p>
-    <!-- Ajoutez du contenu supplémentaire pour la page d'accueil ici -->
+
+    <div class="container icon-gallery">
+        <div class="icon">
+            <img src="{{ url_for('static', filename='images/icons/alerte_notification_3.webp') }}" alt="Notification">
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='images/icons/batterie.webp') }}" alt="Batterie">
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='images/icons/cerveau.webp') }}" alt="Cerveau">
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='images/icons/chat_3.webp') }}" alt="Chat">
+        </div>
+        <!-- Ajoute ici les autres icônes de la même manière -->
+    </div>
 {% endblock %}
